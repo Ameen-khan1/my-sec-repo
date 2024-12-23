@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page metadata and links to external stylesheets and icons -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo and navigation bar for the website -->
+        <a href="{{ url_for('index') }}" class="logo">Cars.</a>
+
+        <!-- Primary navigation -->
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}" style="--i:1" class="active">Home</a>
+            <a href="{{ url_for('aboutus') }}" style="--i:2">About</a>
+            <a href="{{ url_for('gallery') }}" style="--i:4">Gallery</a>
+            <a href="{{ url_for('contact') }}" style="--i:4">Contact</a>
+            <a href="{{ url_for('register') }}" style="--i:5">Login/Register</a>
+        </nav>
+    </header>
+    <section class="home">
+        <!-- Main banner with a call-to-action button -->
+        <div class="home-content">
+            <h1>About Us.</h1>
+            <h3>Why Choose Us!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam neque eaque eum commodi assumenda exercitationem quisquam aperiam facilis labore nemo, repellendus perferendis, autem velit libero rem ullam.</p>
+            <a href="{{ url_for('gallery') }}" class="btn">Explore Cars</a>
+        </div>
+
+        <!-- Decorative image with styling in style.css -->
+        <div class="home-img">
+            <div class="rhombus">
+                <img src="{{ url_for('static', filename='images/car2.png') }}" alt="">
+            </div>
+        </div>
+
+        <!-- Additional decorative element -->
+        <div class="rhombus2"></div>
+    </section>
+
+</body>
+</html>

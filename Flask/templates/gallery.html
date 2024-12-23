@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <!-- Logo and navigation bar for the website -->
+        <a href="{{ url_for('index') }}" class="logo">Cars.</a>
+
+        <!-- Primary navigation -->
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}" style="--i:1" class="active">Home</a>
+            <a href="{{ url_for('aboutus') }}" style="--i:2">About</a>
+            <a href="{{ url_for('gallery') }}" style="--i:4">Gallery</a>
+            <a href="{{ url_for('contact') }}" style="--i:4">Contact</a>
+            <a href="{{ url_for('register') }}" style="--i:5">Login/Register</a>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car.png') }}">
+        </a>
+        <div class="description">BMW</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car2.png') }}">
+        </a>
+        <div class="description">Chevrolet</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car3.png') }}">
+        </a>
+        <div class="description">Audi</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car4.png') }}">
+        </a>
+        <div class="description">Chevrolet</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car5.png') }}">
+        </a>
+        <div class="description">Audi</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car.png') }}">
+        </a>
+        <div class="description">BMW</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car2.png') }}">
+        </a>
+        <div class="description">Chevrolet</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car3.png') }}">
+        </a>
+        <div class="description">Audi</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car4.png') }}">
+        </a>
+        <div class="description">Chevrolet</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank">
+            <img src="{{ url_for('static', filename='images/car5.png') }}">
+        </a>
+        <div class="description">Audi</div>
+    </div>
+</body>
+</html>
